@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Anjani Spring Co. | Industrial Springs Built for Performance</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=Dancing+Script:wght@500;600&display=swap" rel="stylesheet">
 <style>
 /* ============ HOW TO ADD YOUR IMAGES ============
  Put image files in the /images folder with these exact names (jpg or change the extension below):
@@ -90,15 +90,6 @@ nav a.on,nav a:hover{color:var(--blue);border-color:var(--blue)}
 .card .nm i{color:#3b8bff;font-style:normal}
 
 /* manufacturing */
-.mfg{display:grid;grid-template-columns:.9fr 1.4fr 1fr;min-height:230px;background:#fff;overflow:hidden}
-.mfg .l{background:#0a2a5e url(images/factory-left.jpg) center/cover;clip-path:polygon(0 0,100% 0,90% 100%,0 100%)}
-.mfg .m{padding:28px 16px 28px 24px;margin:0}
-.mfg h2{font-size:28px;color:var(--blue2);line-height:1.1;margin:6px 0 10px}
-.mfg p{font-size:13.5px;color:var(--mute);max-width:420px}
-.proc{display:flex;gap:18px;margin:16px 0}
-.proc div{display:flex;gap:6px;align-items:center;font-size:11.5px;line-height:1.2;color:var(--ink)}
-.proc svg{width:26px;height:26px;color:var(--blue2)}
-.mfg .r{background:#dfe8f6 url(images/factory-right.jpg) center/cover;clip-path:polygon(18% 0,100% 0,100% 100%,0 100%)}
 
 /* quality */
 .qual{background:linear-gradient(90deg,#fff 50%,#e3ecf8);overflow:hidden}
@@ -159,15 +150,6 @@ footer .logo .mark{color:#fff}
  .card .im{min-height:215px;background-size:72%}
  .card .nm{font-size:16px;padding:15px 16px;line-height:1.3}
 
- .mfg{min-height:440px;grid-template-columns:1fr 1.15fr .9fr}
- .mfg .m{padding:56px 24px 56px 20px}
- .mfg h2{font-size:38px;margin:8px 0 14px}
- .mfg p{font-size:15.5px;max-width:500px}
- .proc{gap:26px;margin:26px 0}
- .proc div{font-size:13.5px;gap:10px}
- .proc svg{width:36px;height:36px}
- .mfg .btn{padding:14px 24px;font-size:16px}
- .mfg .r{clip-path:polygon(14% 0,100% 0,100% 100%,0 100%)}
 
  .qual .wrap{min-height:330px;padding-top:0;padding-bottom:0;gap:32px;align-items:stretch;grid-template-columns:1.25fr .7fr .8fr 1.4fr}
  .qual .wrap>*{align-self:center}
@@ -265,15 +247,6 @@ footer .logo .mark{color:#fff}
  .card .im{min-height:92px}
  .card .nm{font-size:12.5px;padding:9px 8px;line-height:1.2}
 
- .mfg{display:block}
- .mfg .l{height:210px;clip-path:none}
- .mfg .r{display:none}
- .mfg .m{padding:24px 18px 28px;margin:0}
- .mfg h2{font-size:26px}
- .mfg p{font-size:15px;max-width:none}
- .proc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:18px 0}
- .proc div{font-size:13px}
- .mfg .btn{width:100%;justify-content:center;min-height:48px}
 
  .qual{background:#f5f8fd}
  .qual .wrap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 14px;padding-top:28px;padding-bottom:28px}
@@ -365,7 +338,6 @@ footer .logo .mark{color:#fff}
  .grid4 div:nth-child(-n+3){border-bottom:1px solid var(--line)}
  .grid4 div:nth-child(2){border-bottom:1px solid var(--line)}
  .cards,.irow{grid-template-columns:repeat(2,minmax(0,1fr))}
- .proc{grid-template-columns:minmax(0,1fr)}
 }
 @media(max-width:300px){
  .feat .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -814,11 +786,6 @@ footer .logo .mark{color:#fff}
   .wc p{font-size:13.5px}
   .w2-cards{padding-bottom:26px}
   /* drawing / manufacturing */
-  .mfg{display:block}
-  .mfg .l,.mfg .r{display:block;height:190px;clip-path:none}
-  .mfg .r{display:none}
-  .mfg .m{padding:24px 18px 28px}
-  .proc{display:grid;grid-template-columns:1fr 1fr;gap:14px 10px}
   /* industries */
   .ind{display:block}
   .ind .l{padding:26px 18px}
@@ -877,6 +844,257 @@ footer .logo .mark{color:#fff}
   .wc.on .wc-rm,.wc-grid:hover .wc:hover .wc-rm{color:#5aa8ff}
   .wc-grid:hover .wc.on:not(:hover) .wc-rm{color:#1e7bff}
 }
+/* ===== MANUFACTURING (Precision in Every Step of Production) ===== */
+.pm{background:#04132c;color:#fff;container-type:inline-size;overflow:hidden;font-family:Inter,system-ui,sans-serif}
+.pm *{box-sizing:border-box}
+.pm svg.pi{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;display:block}
+.pm .pm-in{--u:calc(100cqw/1672);position:relative}
+
+/* ---------- mobile / tablet (stacked) ---------- */
+.pm-hero{position:relative;display:flex;flex-direction:column;padding:36px 22px 0;background:linear-gradient(180deg,#04132c,#06214d)}
+.pm-hero-img{order:9;height:210px;margin:26px -22px 0;background:#0a2a5e url(images/mfg-hero.jpg) center/cover}
+.pm-eye{display:flex;align-items:center;gap:14px;font-size:12px;letter-spacing:.28em;font-weight:500;color:#cfe0ff;text-transform:uppercase}
+.pm-eye i{width:34px;height:2px;background:#1769ff;flex:none}
+.pm h2{font-family:Inter,sans-serif;font-weight:800;font-size:30px;line-height:1.14;margin:14px 0 14px;text-transform:uppercase;letter-spacing:-.005em;color:#fff}
+.pm h2 b{display:block;color:#1a6dff;font-weight:800}
+.pm-lead{font-size:15.5px;line-height:1.5;color:#e6eefc;max-width:560px}
+.pm-lead br{display:none}
+.pm-btn{display:inline-flex;align-items:center;gap:10px;align-self:flex-start;margin-top:20px;background:#1769ff;color:#fff;font-weight:600;font-size:15px;padding:13px 22px;border-radius:4px;font-family:Inter,sans-serif}
+.pm-tag{display:none}
+.pm-feats{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
+.pm-feats div{display:flex;align-items:center;gap:10px;font-size:13.5px;line-height:1.25;color:#dbe6fb}
+.pm-feats .ic{width:28px;height:28px;flex:none;color:#cfe0ff}
+.pm-sep{display:none}
+.pm-strip{background:linear-gradient(180deg,#fff,#f1f5fc);padding:18px 16px 22px}
+.pm-lcard{position:relative;overflow:hidden;border-radius:14px;padding:26px 22px;background:linear-gradient(135deg,#0a2a63,#0a3a86);margin-bottom:14px}
+.pm-lcard small{display:block;font-size:11px;letter-spacing:.3em;font-weight:600;color:#3d86ff}
+.pm-lcard h3{font-family:Inter,sans-serif;font-weight:800;font-size:26px;line-height:1.2;margin:6px 0 10px;text-transform:uppercase;color:#fff}
+.pm-lcard h3 b{display:block;color:#2d7bff}
+.pm-lcard hr{width:34px;height:2px;border:0;background:#1769ff;margin:0 0 12px}
+.pm-lcard p{font-size:14.5px;line-height:1.55;color:#e6eefc}
+.pm-steps{display:grid;grid-template-columns:1fr;gap:12px}
+.pm-step{position:relative;background:#fff;border:1px solid #e3eaf6;border-radius:10px;padding:16px;box-shadow:0 6px 18px rgba(20,50,110,.07);display:grid;grid-template-columns:1fr 130px;gap:4px 14px;align-items:center;color:#0b1f4a}
+.pm-step .top{grid-column:1/-1;display:flex;align-items:center;gap:14px}
+.pm-step .n{width:36px;height:36px;border-radius:6px;background:#e6efff;color:#2a6cf0;font-weight:600;font-size:16px;display:grid;place-items:center;letter-spacing:.04em}
+.pm-step .si{width:34px;height:34px;color:#1f6bf2}
+.pm-step h4{font-family:Inter,sans-serif;font-size:17px;font-weight:700;color:#0b1f4a}
+.pm-step p{font-size:13.5px;line-height:1.45;color:#6f8bbd}
+.pm-step .ph2{grid-column:2;grid-row:2/4;height:92px;border-radius:6px;background:#0a2a5e center/cover}
+.pm-arrow{display:none}
+.pm-foot{position:relative;background:linear-gradient(90deg,#041634,#06224f);padding:22px 20px 24px}
+.pm-foot-in{display:grid;grid-template-columns:1fr 1fr;gap:18px 14px}
+.pm-fi{display:flex;align-items:center;gap:12px}
+.pm-fi .ic{width:34px;height:34px;flex:none;color:#cfe0ff}
+.pm-fi b{display:block;font-size:14px;font-weight:600;color:#fff}
+.pm-fi span{display:block;font-size:11.5px;color:#aebfe0;line-height:1.35}
+.pm-eng{margin-top:20px;font-size:12px;letter-spacing:.24em;font-weight:600;line-height:1.6;color:#fff}
+.pm-eng i{display:block;width:34px;height:2px;background:#1769ff;margin-top:8px}
+.pm-foot-img,.pm-foot-line{display:none}
+@media(min-width:560px){.pm-steps{grid-template-columns:1fr 1fr}.pm-feats{grid-template-columns:repeat(4,auto);justify-content:start;gap:22px}.pm-foot-in{grid-template-columns:repeat(4,1fr)}}
+@media(min-width:560px) and (max-width:1099px){.pm-step{grid-template-columns:1fr}.pm-step .ph2{grid-column:1;grid-row:auto;height:110px;margin-top:8px}}
+
+/* decorative layers: desktop only */
+.pm-lbg,.pm-bgstrip,.pm-bgstrip-l,.pm-foot-bg{display:none}
+.pm-lcard .pm-lcard-t{position:static}
+
+/* ---------- desktop: exact replica of the design (scales with width) ---------- */
+@media(min-width:1100px){
+.pm-in{aspect-ratio:1672/940;background:#04132c}
+.pm-hero,.pm-strip,.pm-foot,.pm-lcard,.pm-steps,.pm-foot-in,.pm-feats{display:contents}
+.pm-hero{padding:0}
+.pm .a{position:absolute}
+.pm-hero-img{position:absolute;left:calc(var(--u)*770);top:0;width:calc(var(--u)*902);height:calc(var(--u)*485);margin:0;
+ clip-path:polygon(calc(var(--u)*170) 0,100% 0,100% 100%,0 100%);background:#0a2a5e url(images/mfg-hero.jpg) center 35%/cover}
+.pm-hero-img:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,19,44,.55),rgba(4,19,44,0) 35%)}
+.pm-eye{position:absolute;left:calc(var(--u)*102);top:calc(var(--u)*62);gap:calc(var(--u)*18);font-size:calc(var(--u)*15.5);letter-spacing:.3em}
+.pm-eye i{width:calc(var(--u)*44);height:max(1px,calc(var(--u)*2))}
+.pm h2{position:absolute;left:calc(var(--u)*102);top:calc(var(--u)*96);margin:0;font-size:calc(var(--u)*52.5);line-height:calc(var(--u)*60);white-space:nowrap}
+.pm-lead{position:absolute;left:calc(var(--u)*102);top:calc(var(--u)*229);width:calc(var(--u)*540);font-size:calc(var(--u)*18.6);line-height:calc(var(--u)*24.4);max-width:none}
+.pm-lead br{display:inline}
+.pm-btn{position:absolute;left:calc(var(--u)*102);top:calc(var(--u)*323);width:calc(var(--u)*215);height:calc(var(--u)*45);margin:0;padding:0;justify-content:center;gap:calc(var(--u)*10);font-size:calc(var(--u)*15.5);border-radius:calc(var(--u)*3)}
+.pm-tag{display:block;position:absolute;left:calc(var(--u)*1418);top:calc(var(--u)*78);transform:rotate(-14deg);transform-origin:left bottom;font-family:'Dancing Script',cursive;font-weight:500;font-size:calc(var(--u)*37);line-height:1.12;color:#fff;white-space:nowrap;z-index:2;text-shadow:0 2px 10px rgba(0,0,0,.35)}
+.pm-tag i{display:block;height:max(1px,calc(var(--u)*2));width:calc(var(--u)*140);background:linear-gradient(90deg,#1769ff,rgba(23,105,255,0));margin:calc(var(--u)*6) 0 0 calc(var(--u)*24);transform:rotate(-3deg)}
+.pm-feats div{position:absolute;top:calc(var(--u)*395);gap:calc(var(--u)*10);font-size:calc(var(--u)*14.5);line-height:calc(var(--u)*18);height:calc(var(--u)*40)}
+.pm-feats div:nth-child(1){left:calc(var(--u)*102)}.pm-feats div:nth-child(2){left:calc(var(--u)*258)}.pm-feats div:nth-child(3){left:calc(var(--u)*438)}.pm-feats div:nth-child(4){left:calc(var(--u)*596)}
+.pm-feats .ic{width:calc(var(--u)*32);height:calc(var(--u)*32)}
+.pm-sep{display:block;position:absolute;top:calc(var(--u)*397);width:1px;height:calc(var(--u)*38);background:rgba(255,255,255,.2)}
+.pm-bgstrip{display:block;position:absolute;left:calc(var(--u)*396);top:calc(var(--u)*484);right:0;height:calc(var(--u)*323);background:linear-gradient(180deg,#fff 30%,#f1f5fb);border-top-left-radius:calc(var(--u)*26)}
+.pm-bgstrip-l{display:block;position:absolute;left:0;top:calc(var(--u)*780);width:calc(var(--u)*420);height:calc(var(--u)*27);background:#eef3fa}
+.pm-lbg{display:block;position:absolute;left:0;top:calc(var(--u)*495);width:calc(var(--u)*421);height:calc(var(--u)*293);border-radius:0 calc(var(--u)*16) calc(var(--u)*16) 0;overflow:hidden;background:linear-gradient(120deg,#0a2a63 0%,#0a3a86 100%);box-shadow:0 calc(var(--u)*10) calc(var(--u)*24) rgba(5,25,70,.25)}
+.pm-lbg .pm-wire{display:block;position:absolute;left:0;top:calc(var(--u)*28);width:calc(var(--u)*170);height:calc(var(--u)*265);background:url(images/mfg-wire.jpg) 8% center/auto 100%;-webkit-mask-image:linear-gradient(90deg,#000 55%,transparent);mask-image:linear-gradient(90deg,#000 55%,transparent)}
+.pm-lbg .pm-slash{position:absolute;left:calc(var(--u)*158);top:calc(var(--u)*22);width:max(2px,calc(var(--u)*3));height:calc(var(--u)*250);background:#1769ff;transform:rotate(12deg);box-shadow:0 0 14px rgba(23,105,255,.7)}
+.pm .pm-lcard-t{position:absolute;left:calc(var(--u)*182);top:calc(var(--u)*531);width:calc(var(--u)*215)}
+.pm-lcard small{font-size:calc(var(--u)*11.5);letter-spacing:.32em}
+.pm-lcard h3{font-size:calc(var(--u)*29);line-height:calc(var(--u)*34);margin:calc(var(--u)*11) 0 calc(var(--u)*14);letter-spacing:.005em}
+.pm-lcard hr{width:calc(var(--u)*34);height:max(1px,calc(var(--u)*2));margin:0 0 calc(var(--u)*17)}
+.pm-lcard p{font-size:calc(var(--u)*15.3);line-height:calc(var(--u)*22.4)}
+.pm-steps .pm-step{position:absolute;top:calc(var(--u)*500);width:calc(var(--u)*208);height:calc(var(--u)*278);padding:0;border-radius:calc(var(--u)*10);display:block;box-shadow:0 calc(var(--u)*6) calc(var(--u)*20) rgba(20,50,110,.09)}
+.pm-step.s1{left:calc(var(--u)*445)}.pm-step.s2{left:calc(var(--u)*689)}.pm-step.s3{left:calc(var(--u)*933)}.pm-step.s4{left:calc(var(--u)*1178)}.pm-step.s5{left:calc(var(--u)*1423)}
+.pm-step .top{position:absolute;left:calc(var(--u)*21);top:calc(var(--u)*20);gap:calc(var(--u)*20)}
+.pm-step .n{width:calc(var(--u)*36);height:calc(var(--u)*36);border-radius:calc(var(--u)*6);font-size:calc(var(--u)*17)}
+.pm-step .si{width:calc(var(--u)*34);height:calc(var(--u)*34)}
+.pm-step h4{position:absolute;left:calc(var(--u)*21);top:calc(var(--u)*65);font-size:calc(var(--u)*17.6);line-height:calc(var(--u)*26);white-space:nowrap}
+.pm-step p{position:absolute;left:calc(var(--u)*21);top:calc(var(--u)*94);width:calc(var(--u)*172);font-size:max(9.5px,calc(var(--u)*13.4));line-height:calc(var(--u)*17.6)}
+.pm-step .ph2{position:absolute;left:calc(var(--u)*16);top:calc(var(--u)*165);width:calc(var(--u)*177);height:calc(var(--u)*95);margin:0;border-radius:calc(var(--u)*6)}
+.pm-arrow{display:block;position:absolute;top:calc(var(--u)*611);font-size:calc(var(--u)*17);color:#2f6df0;line-height:calc(var(--u)*24)}
+.pm-foot-bg{display:block;position:absolute;left:0;top:calc(var(--u)*807);width:100%;height:calc(var(--u)*133);background:linear-gradient(90deg,#041634,#06224f 70%,#051a40)}
+.pm-foot-img{display:block;position:absolute;left:calc(var(--u)*1165);top:calc(var(--u)*807);width:calc(var(--u)*507);height:calc(var(--u)*133);background:#0a2a5e url(images/mfg-springs.jpg) center 55%/cover;clip-path:polygon(calc(var(--u)*65) 0,100% 0,100% 100%,0 100%)}
+.pm-foot-img:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,22,52,.75),rgba(4,22,52,.3) 35%,rgba(4,22,52,.6) 62%,rgba(4,22,52,.96) 82%)}
+.pm-foot-line{display:block;position:absolute;left:calc(var(--u)*1432);top:calc(var(--u)*862);width:max(2px,calc(var(--u)*3));height:calc(var(--u)*52);background:#1769ff;transform:rotate(24deg);box-shadow:0 0 12px rgba(23,105,255,.7)}
+.pm-fi{position:absolute;top:calc(var(--u)*838);gap:calc(var(--u)*17);height:calc(var(--u)*46)}
+.pm-fi .ic{width:calc(var(--u)*36);height:calc(var(--u)*36)}
+.pm-fi b{font-size:calc(var(--u)*15);line-height:calc(var(--u)*20)}
+.pm-fi span{font-size:max(8.5px,calc(var(--u)*11.8));line-height:calc(var(--u)*17);white-space:nowrap}
+.pm-fi:nth-child(1){left:calc(var(--u)*78)}.pm-fi:nth-child(2){left:calc(var(--u)*330)}.pm-fi:nth-child(3){left:calc(var(--u)*643)}.pm-fi:nth-child(4){left:calc(var(--u)*883)}
+.pm-eng{position:absolute;left:calc(var(--u)*1482);top:calc(var(--u)*836);margin:0;font-size:calc(var(--u)*12.6);line-height:calc(var(--u)*18);letter-spacing:.26em;z-index:2}
+.pm-eng i{position:absolute;left:0;top:calc(var(--u)*66);width:calc(var(--u)*34);height:max(1px,calc(var(--u)*2));margin:0}
+}
+
+.pm-sep.f{top:calc(var(--u)*840);height:calc(var(--u)*46)}
+@media(max-width:1099px){.pm-sep{display:none!important}}
+
+
+/* ===== MOBILE: compact section + full-screen "process" screen ===== */
+.pmo{display:none}
+@media(max-width:1099px){
+ .pm-strip,.pm-foot,.pm-tag{display:none}
+ .pm-hero{padding-bottom:0}
+ .pmo{display:block;position:fixed;inset:0;z-index:2000;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;background:radial-gradient(120% 60% at 80% 0,#0b3170 0,transparent 60%),linear-gradient(180deg,#03102a,#05193c 45%,#061f48);color:#fff;font-family:Inter,system-ui,sans-serif;visibility:hidden;transform:translateY(24px);opacity:0;transition:transform .32s cubic-bezier(.2,.8,.2,1),opacity .25s,visibility 0s .32s}
+ .pmo.on{visibility:visible;transform:none;opacity:1;transition:transform .32s cubic-bezier(.2,.8,.2,1),opacity .25s}
+ body.pm-lock{overflow:hidden}
+ .pmo *{box-sizing:border-box}
+ .pmo svg.pi{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;display:block}
+ .pmo-sc{--d:calc(min(100vw,560px)/640);max-width:560px;margin:0 auto;min-height:100%;position:relative;padding-bottom:env(safe-area-inset-bottom,0)}
+ .pmo-top{display:flex;align-items:center;justify-content:space-between;padding:max(14px,calc(var(--d)*30)) calc(var(--d)*34) calc(var(--d)*18)}
+ .pmo-brand{display:flex;align-items:center;gap:calc(var(--d)*14)}
+ .pmo-brand svg{width:max(28px,calc(var(--d)*46));height:max(28px,calc(var(--d)*46));fill:none;stroke:#2d7bff;stroke-width:2.2;flex:none}
+ .pmo-brand b{display:block;font-weight:500;font-size:max(15px,calc(var(--d)*22));line-height:1.1}
+ .pmo-brand small{display:block;font-size:max(7px,calc(var(--d)*9.5));letter-spacing:.2em;color:#7fb0ff;margin-top:3px}
+ .pmo-x{width:44px;height:44px;border:0;background:rgba(255,255,255,.08);border-radius:50%;color:#4a9bff;display:grid;place-items:center;cursor:pointer}
+ .pmo-x svg{width:20px;height:20px;stroke:currentColor;stroke-width:2.2;fill:none;stroke-linecap:round}
+ .pmo-hero{position:relative;padding:calc(var(--d)*36) calc(var(--d)*34) calc(var(--d)*30)}
+ .pmo-himg,.pmo-hline{position:absolute;right:0;top:calc(var(--d)*-4);bottom:calc(var(--d)*6);width:48%;clip-path:polygon(44% 0,100% 0,100% 100%,0 100%)}
+ .pmo-himg{background:#0a2a5e url(images/mfg-springs.jpg) 70% center/cover}
+ .pmo-himg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,19,44,.85),rgba(4,19,44,.1) 55%)}
+ .pmo-hline{background:#1f7bff;clip-path:polygon(44% 0,calc(44% + 2px) 0,2px 100%,0 100%);filter:drop-shadow(0 0 5px #1769ff)}
+ .pmo-hero>*:not(.pmo-himg):not(.pmo-hline){position:relative;z-index:1}
+ .pmo-eye{display:flex;align-items:center;gap:calc(var(--d)*18);font-size:max(10px,calc(var(--d)*14));letter-spacing:.3em;color:#cfe0ff;font-weight:500}
+ .pmo-eye i{width:calc(var(--d)*44);height:2px;background:#1769ff;flex:none}
+ .pmo-hero h3{font-weight:800;font-size:max(22px,calc(var(--d)*38));line-height:1.1;margin:calc(var(--d)*18) 0 calc(var(--d)*22);text-transform:uppercase;text-shadow:0 2px 10px rgba(0,0,0,.4);white-space:nowrap}
+ .pmo-hero h3 b{display:block;color:#1a6dff}
+ .pmo-hero p{font-size:max(12.5px,calc(var(--d)*16));line-height:1.45;max-width:78%;color:#eaf1ff;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+ .pmo-btn{display:inline-flex;align-items:center;gap:10px;margin-top:calc(var(--d)*30);padding:0 calc(var(--d)*26);min-height:max(42px,calc(var(--d)*52));background:#1769ff;color:#fff;font-weight:600;font-size:max(13px,calc(var(--d)*16.5));border-radius:4px;box-shadow:0 6px 20px rgba(23,105,255,.35)}
+ .pmo-feats{display:grid;grid-template-columns:repeat(4,auto);gap:0;padding:calc(var(--d)*6) calc(var(--d)*20) calc(var(--d)*34);justify-content:space-between}
+ .pmo-feats div{display:flex;align-items:center;gap:calc(var(--d)*10);font-size:max(10px,calc(var(--d)*14));line-height:1.25;color:#dbe6fb;padding:0 calc(var(--d)*8)}
+ .pmo-feats div+div{border-left:1px solid rgba(255,255,255,.16)}
+ .pmo-feats .ic{width:max(20px,calc(var(--d)*34));height:max(20px,calc(var(--d)*34));flex:none;color:#bcd3ff}
+ .pmo-panel{position:relative;background:linear-gradient(180deg,#f7fbff,#e7f0fc);border-radius:calc(var(--d)*30) calc(var(--d)*30) 0 0;padding:calc(var(--d)*30) calc(var(--d)*24) 0;color:#0b1f4a;overflow:hidden;box-shadow:0 -6px 30px rgba(40,120,255,.25)}
+ .pmo-built{display:grid;grid-template-columns:1fr 46%;align-items:center;gap:calc(var(--d)*10);margin-bottom:calc(var(--d)*26)}
+ .pmo-built small{display:block;font-size:max(9.5px,calc(var(--d)*13));letter-spacing:.3em;font-weight:700;color:#1769ff}
+ .pmo-built h4{font-weight:800;font-size:max(20px,calc(var(--d)*35));line-height:1.08;text-transform:uppercase;color:#0a2150;margin:calc(var(--d)*10) 0 calc(var(--d)*12)}
+ .pmo-built h4 b{display:block;color:#1769ff}
+ .pmo-built hr{width:calc(var(--d)*34);height:2px;border:0;background:#1769ff;margin:0 0 calc(var(--d)*14)}
+ .pmo-built p{font-size:max(12px,calc(var(--d)*16));line-height:1.45;color:#0d2a5e}
+ .pmo-wire{align-self:stretch;min-height:calc(var(--d)*170);margin-right:calc(var(--d)*-24);background:url(images/mfg-wire.jpg) center/cover;clip-path:polygon(12% 0,100% 0,100% 100%,0 100%);border-radius:0 0 0 calc(var(--d)*20);position:relative}
+ .pmo-row{display:grid;gap:calc(var(--d)*16);margin-bottom:calc(var(--d)*16)}
+ .pmo-row.r3{grid-template-columns:repeat(3,1fr)}.pmo-row.r2{grid-template-columns:repeat(2,1fr)}
+ .pmo-c{display:flex;flex-direction:column;position:relative;background:#fff;border:1px solid #dfe9f7;border-radius:calc(var(--d)*10);padding:calc(var(--d)*16) calc(var(--d)*16) calc(var(--d)*16);box-shadow:0 6px 18px rgba(25,70,150,.1)}
+ .pmo-row>.pmo-c:not(:last-child):after{content:"\2192";position:absolute;right:calc(var(--d)*-14);top:50%;transform:translate(50%,-50%);font-size:max(11px,calc(var(--d)*16));color:#1769ff;z-index:2;background:transparent}
+ .pmo-c .t{display:flex;align-items:center;gap:calc(var(--d)*14);margin-bottom:calc(var(--d)*14)}
+ .pmo-c .n{width:max(22px,calc(var(--d)*34));height:max(22px,calc(var(--d)*34));border-radius:5px;background:#e3eeff;color:#1f6bf2;font-weight:700;font-size:max(10px,calc(var(--d)*16));display:grid;place-items:center}
+ .pmo-c .si{width:max(22px,calc(var(--d)*34));height:max(22px,calc(var(--d)*34));color:#1f6bf2}
+ .pmo-c h5{font-weight:700;font-size:max(11.5px,calc(var(--d)*18));line-height:1.2;color:#0a2150;margin-bottom:calc(var(--d)*8)}
+ .pmo-c p{font-size:max(9.5px,calc(var(--d)*12.5));line-height:1.4;color:#5f7cae;margin-bottom:calc(var(--d)*14)}
+ .pmo-c .im{margin-top:auto;height:max(52px,calc(var(--d)*80));border-radius:4px;background:#0a2a5e center/cover}
+ .pmo-row.r2 .im{height:max(64px,calc(var(--d)*100))}
+ .pmo-foot{position:relative;margin:calc(var(--d)*26) calc(var(--d)*-24) 0;border-radius:calc(var(--d)*24) calc(var(--d)*24) 0 0;overflow:hidden;background:linear-gradient(120deg,#05204f,#0a3a86 70%);border-top:1px solid rgba(80,150,255,.5);padding:calc(var(--d)*30) calc(var(--d)*34) calc(var(--d)*36);min-height:calc(var(--d)*220);color:#fff}
+ .pmo-fimg{position:absolute;right:0;top:0;bottom:0;width:42%;background:url(images/mfg-springs2.jpg) 60% center/cover;clip-path:polygon(34% 0,100% 0,100% 100%,0 100%)}
+ .pmo-fimg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,32,79,.9),rgba(5,32,79,.25) 70%,rgba(5,32,79,.5))}
+ .pmo-fgrid{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:calc(var(--d)*30) calc(var(--d)*20);width:78%}
+ .pmo-fgrid>div{display:flex;align-items:center;gap:calc(var(--d)*14)}
+ .pmo-fgrid .ic{width:max(24px,calc(var(--d)*38));height:max(24px,calc(var(--d)*38));flex:none;color:#bcd3ff}
+ .pmo-fgrid b{display:block;font-size:max(10.5px,calc(var(--d)*14));font-weight:600}
+ .pmo-fgrid span span{display:block;font-size:max(8.5px,calc(var(--d)*11));color:#aebfe0;line-height:1.35;margin-top:2px}
+ .pmo-wire-t{position:absolute;right:calc(var(--d)*30);bottom:calc(var(--d)*30);z-index:2;transform:rotate(-12deg);font-family:'Dancing Script',cursive;font-weight:500;font-size:max(15px,calc(var(--d)*29));line-height:1.1;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.6)}
+ .pmo-wire-t i{display:block;height:2px;width:70%;margin:4px 0 0 20%;background:linear-gradient(90deg,#1769ff,transparent)}
+ .pmo-bottom{height:calc(20px + env(safe-area-inset-bottom,0px));background:#061f48}
+}
+@media(max-width:359px){.pmo-feats{grid-template-columns:1fr 1fr;gap:12px 0}.pmo-row.r3{grid-template-columns:1fr}.pmo-row>.pmo-c:after{display:none!important}}
+
+
+/* products: native swipe + drag scroll (replaces CSS-animation ticker that froze after a tap) */
+#products .cards-vp{overflow-x:auto!important;overflow-y:hidden;scrollbar-width:none;-ms-overflow-style:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;cursor:grab}
+#products .cards-vp::-webkit-scrollbar{display:none}
+#products .cards-vp.drag{cursor:grabbing;user-select:none}
+#products .cards{animation:none!important;transform:none!important;will-change:auto}
+
+/* ===== overlay v2: no overlap, sticky close, card effects ===== */
+@media(max-width:1099px){
+ .pmo-top{position:sticky;top:0;z-index:20;background:linear-gradient(180deg,rgba(3,16,42,.96),rgba(3,16,42,.82));-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);padding-bottom:calc(var(--d)*14);border-bottom:1px solid rgba(80,150,255,.18)}
+ .pmo-x{width:auto;height:40px;border-radius:20px;padding:0 14px 0 16px;gap:8px;grid-auto-flow:column;background:rgba(255,255,255,.12);color:#fff;font:600 13px Inter,sans-serif;border:1px solid rgba(120,175,255,.45);transition:background .2s,transform .2s}
+ .pmo-x:active{transform:scale(.94);background:rgba(255,255,255,.22)}
+ .pmo-x svg{width:16px;height:16px;color:#7fb8ff}
+ .pmo-hero{padding-bottom:calc(var(--d)*26)}
+ .pmo-hero p{max-width:100%}
+ .pmo-hrow{position:relative;padding-right:46%;min-height:calc(var(--d)*230)}
+ .pmo-hrow p{max-width:none;margin:0}
+ .pmo-himg,.pmo-hline{right:calc(var(--d)*-34);top:calc(var(--d)*-6);bottom:calc(var(--d)*-26);width:calc(40% + var(--d)*34)}
+ .pmo-himg:after{background:linear-gradient(90deg,rgba(4,19,44,.7),rgba(4,19,44,0) 45%)}
+ .pmo-hero h3{margin-bottom:calc(var(--d)*18)}
+ .pmo-btn{margin-top:calc(var(--d)*22);position:relative;z-index:2}
+ /* features: icon on top, no cramped wrapping */
+ .pmo-feats{grid-template-columns:repeat(4,minmax(0,1fr));padding:calc(var(--d)*6) calc(var(--d)*14) calc(var(--d)*30)}
+ .pmo-feats div{flex-direction:column;text-align:center;gap:6px;padding:0 2px;font-size:max(10px,calc(var(--d)*13.5))}
+ .pmo-feats .ic{width:max(22px,calc(var(--d)*32));height:max(22px,calc(var(--d)*32))}
+ /* footer: text never sits on the photo */
+ .pmo-fgrid{width:100%}
+ .pmo-fimg{width:34%;opacity:.55}
+ .pmo-fimg:after{background:linear-gradient(90deg,rgba(5,32,79,.95),rgba(5,32,79,.55))}
+ .pmo-wire-t{position:relative;right:auto;bottom:auto;display:block;width:max-content;margin:calc(var(--d)*22) 0 0 auto;transform:rotate(-6deg)}
+ /* back row */
+ .pmo-backrow{background:#061f48;padding:calc(var(--d)*6) calc(var(--d)*34) calc(var(--d)*10);display:flex;justify-content:center}
+ .pmo-back{display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 24px;border-radius:23px;border:1px solid rgba(120,175,255,.5);background:rgba(255,255,255,.08);color:#fff;font:600 14px Inter,sans-serif;cursor:pointer;transition:background .2s,transform .2s}
+ .pmo-back:active{transform:scale(.96);background:rgba(255,255,255,.2)}
+ .pmo-back svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+ /* card effects */
+ .pmo-c{transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s,border-color .3s;overflow:hidden;-webkit-tap-highlight-color:transparent}
+ .pmo-c:before{content:"";position:absolute;inset:0 auto 0 -110%;width:45%;background:linear-gradient(100deg,transparent,rgba(120,175,255,.28),transparent);transform:skewX(-18deg);transition:left .7s;pointer-events:none;z-index:3}
+ .pmo-c:hover,.pmo-c:active,.pmo-c:focus-visible{transform:translateY(-5px);border-color:#5d9bff;box-shadow:0 14px 30px rgba(23,105,255,.28),0 0 0 1px rgba(60,130,255,.35)}
+ .pmo-c:hover:before,.pmo-c:active:before{left:130%}
+ .pmo-c .im{position:relative;overflow:hidden;background:#0a2a5e}
+ .pmo-c .im:before{content:"";position:absolute;inset:0;background:var(--im) center/cover;transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+ .pmo-c:hover .im:before,.pmo-c:active .im:before{transform:scale(1.14)}
+ .pmo-c .n{transition:background .3s,color .3s,transform .3s}
+ .pmo-c:hover .n,.pmo-c:active .n{background:#1769ff;color:#fff;transform:scale(1.08)}
+ .pmo-c .si{transition:transform .5s}
+ .pmo-c:hover .si,.pmo-c:active .si{transform:rotate(-12deg) scale(1.15)}
+ .pmo-c h5{transition:color .3s}.pmo-c:hover h5,.pmo-c:active h5{color:#1769ff}
+ .pmo-c:after{transition:transform .3s}
+ @keyframes pmoUp{from{opacity:0;transform:translateY(26px) scale(.96)}to{opacity:1;transform:none}}
+ .pmo.on .pmo-c{animation:pmoUp .6s cubic-bezier(.2,.8,.2,1) both}
+ .pmo.on .r3 .pmo-c:nth-child(1){animation-delay:.25s}.pmo.on .r3 .pmo-c:nth-child(2){animation-delay:.38s}.pmo.on .r3 .pmo-c:nth-child(3){animation-delay:.51s}
+ .pmo.on .r2 .pmo-c:nth-child(1){animation-delay:.64s}.pmo.on .r2 .pmo-c:nth-child(2){animation-delay:.77s}
+ .pmo.on .pmo-built,.pmo.on .pmo-foot{animation:pmoUp .6s .15s both}
+ .pmo.on .pmo-foot{animation-delay:.9s}
+ .pmo.on .pmo-btn{animation:pmoGlow 2.4s 1s infinite}
+ @keyframes pmoGlow{0%,100%{box-shadow:0 6px 20px rgba(23,105,255,.35)}50%{box-shadow:0 6px 30px rgba(23,105,255,.85)}}
+}
+@media(max-width:359px){.pmo-feats{grid-template-columns:repeat(2,minmax(0,1fr))}.pmo-hrow{padding-right:0}.pmo-himg,.pmo-hline{display:none}}
+@media(prefers-reduced-motion:reduce){.pmo *,.pmo{animation:none!important;transition:none!important}}
+
+/* desktop step cards: hover effects */
+@media(min-width:1100px){
+ .pm-step{transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s,border-color .3s;overflow:hidden}
+ .pm-step:before{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,rgba(23,105,255,.16),transparent);transform:skewX(-18deg);transition:left .7s;pointer-events:none;z-index:3}
+ .pm-step:hover{transform:translateY(calc(var(--u)*-8));border-color:#7fb0ff;box-shadow:0 calc(var(--u)*18) calc(var(--u)*36) rgba(23,105,255,.25)}
+ .pm-step:hover:before{left:130%}
+ .pm-step .n{transition:background .3s,color .3s,transform .3s}
+ .pm-step:hover .n{background:#1769ff;color:#fff;transform:scale(1.08)}
+ .pm-step .si{transition:transform .5s}.pm-step:hover .si{transform:rotate(-12deg) scale(1.15)}
+ .pm-step .ph2{transition:transform .7s cubic-bezier(.2,.8,.2,1),filter .4s}
+ .pm-step:hover .ph2{transform:scale(1.05);filter:saturate(1.15) brightness(1.05)}
+ .pm-step h4{transition:color .3s}.pm-step:hover h4{color:#1769ff}
+}
 </style>
 </head>
 <body>
@@ -927,12 +1145,12 @@ footer .logo .mark{color:#fff}
 <section class="prod" id="products"><div class="wrap">
  <div class="sechead"><div><div class="eyebrow" style="color:#cfe0ff">Our products</div><h2>Springs for every <span class="hl">application</span></h2></div><a href="#">View All Products &rarr;</a></div>
  <div class="cards">
-  <a class="card" href="#"><div class="im" style="background-image:url(images/compression.jpg)"></div><div class="nm"><span>Compression <br>Springs<small class="sub">High load &amp; durability</small></span><i>&rarr;</i></div></a>
-  <a class="card" href="#"><div class="im" style="background-image:url(images/tension.jpg)"></div><div class="nm"><span>Tension <br>Springs<small class="sub">Strong &amp; reliable</small></span><i>&rarr;</i></div></a>
-  <a class="card x" href="#"><div class="im" style="background-image:url(images/extension.jpg)"></div><div class="nm"><span>Extension <br>Springs<small class="sub">Smooth pull force</small></span><i>&rarr;</i></div></a>
-  <a class="card" href="#"><div class="im" style="background-image:url(images/torsion.jpg)"></div><div class="nm"><span>Double Torsion <br>Springs<small class="sub">Built for motion</small></span><i>&rarr;</i></div></a>
-  <a class="card x" href="#"><div class="im" style="background-image:url(images/conical.jpg)"></div><div class="nm"><span>Conical <br>Springs<small class="sub">Compact &amp; stable</small></span><i>&rarr;</i></div></a>
-  <a class="card" href="#"><div class="im" style="background-image:url(images/custom.jpg)"></div><div class="nm"><span>Custom <br>Springs<small class="sub">Your design, our expertise</small></span><i>&rarr;</i></div></a>
+  <a class="card" href="#"><div class="im" style="--im:url(images/compression.jpg)"></div><div class="nm"><span>Compression <br>Springs<small class="sub">High load &amp; durability</small></span><i>&rarr;</i></div></a>
+  <a class="card" href="#"><div class="im" style="--im:url(images/tension.jpg)"></div><div class="nm"><span>Tension <br>Springs<small class="sub">Strong &amp; reliable</small></span><i>&rarr;</i></div></a>
+  <a class="card x" href="#"><div class="im" style="--im:url(images/extension.jpg)"></div><div class="nm"><span>Extension <br>Springs<small class="sub">Smooth pull force</small></span><i>&rarr;</i></div></a>
+  <a class="card" href="#"><div class="im" style="--im:url(images/torsion.jpg)"></div><div class="nm"><span>Double Torsion <br>Springs<small class="sub">Built for motion</small></span><i>&rarr;</i></div></a>
+  <a class="card x" href="#"><div class="im" style="--im:url(images/conical.jpg)"></div><div class="nm"><span>Conical <br>Springs<small class="sub">Compact &amp; stable</small></span><i>&rarr;</i></div></a>
+  <a class="card" href="#"><div class="im" style="--im:url(images/custom.jpg)"></div><div class="nm"><span>Custom <br>Springs<small class="sub">Your design, our expertise</small></span><i>&rarr;</i></div></a>
  </div>
  <a class="vall" href="#">View All Products &rarr;</a>
 </div></section>
@@ -983,21 +1201,120 @@ footer .logo .mark{color:#fff}
  <div class="btns"><a class="btn pri" href="#contact"><svg class="i"><use href="#send"/></svg>Send Your Requirement</a><a class="btn wa" href="https://wa.me/919427333380"><svg class="i"><use href="#wa"/></svg>WhatsApp Us</a></div>
 </section>
 
-<section class="mfg" id="manufacturing">
- <div class="l" role="img" aria-label="Spring on a coiling machine"></div>
- <div class="m">
-  <div class="eyebrow">Our manufacturing</div><h2>STATE-OF-THE-ART<br>PRODUCTION FACILITY</h2>
-  <p>Equipped with modern machinery and a skilled workforce, we ensure consistent quality, high precision and efficient delivery for every order.</p>
-  <div class="proc">
-   <div><svg class="i"><use href="#gear"/></svg>CNC Coil<br>Winding</div>
-   <div><svg class="i"><use href="#flame"/></svg>Heat Treatment<br>&amp; Tempering</div>
-   <div><svg class="i"><use href="#gear"/></svg>Surface<br>Finishing</div>
-   <div><svg class="i"><use href="#check"/></svg>Quality<br>Inspection</div>
+<section class="pm" id="manufacturing" aria-label="Our manufacturing process">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="pm-gear" viewBox="0 0 32 32"><circle cx="16" cy="16" r="8.5"/><circle cx="16" cy="16" r="3.4"/><path d="M16 3.5v4M16 24.5v4M3.5 16h4M24.5 16h4M7.2 7.2l2.8 2.8M22 22l2.8 2.8M24.8 7.2L22 10M10 22l-2.8 2.8" stroke-width="3"/></symbol>
+<symbol id="pm-shield" viewBox="0 0 32 32"><path d="M16 3.5l10 3.8v8.2c0 6-4.2 10.3-10 13-5.8-2.7-10-7-10-13V7.3z"/><path d="M11.5 16l3.5 3.5 6-6.5"/></symbol>
+<symbol id="pm-target" viewBox="0 0 32 32"><circle cx="16" cy="16" r="8"/><circle cx="16" cy="16" r="2.2"/><path d="M16 3v5.5M16 23.5V29M3 16h5.5M23.5 16H29"/></symbol>
+<symbol id="pm-truck" viewBox="0 0 32 32"><path d="M3 8.5h15V21H3zM18 13h5l4.5 4.5V21H18"/><circle cx="9" cy="23" r="2.4"/><circle cx="23" cy="23" r="2.4"/></symbol>
+<symbol id="pm-factory" viewBox="0 0 32 32"><path d="M3.5 28V14.5l7 4.200v-4.200l7 4.200V6h4.500v22zM3 28h26"/><path d="M8 24h1.500M14 24h1.500M20 24h1.500M20 11h2"/></symbol>
+<symbol id="pm-bolt" viewBox="0 0 32 32"><path d="M18.500 3L7 18h8l-2 11 12-16h-8z"/></symbol>
+<symbol id="pm-coils" viewBox="0 0 32 32"><circle cx="16" cy="16" r="12"/><circle cx="16" cy="16" r="8.500"/><circle cx="16" cy="16" r="5"/><circle cx="16" cy="16" r="1.800"/></symbol>
+<symbol id="pm-wind" viewBox="0 0 32 32"><ellipse cx="16" cy="16" rx="12" ry="6" transform="rotate(45 16 16)"/><ellipse cx="16" cy="16" rx="12" ry="6" transform="rotate(-45 16 16)"/><path d="M5 9l-1 4 4 1M27 23l1-4-4-1"/></symbol>
+<symbol id="pm-therm" viewBox="0 0 32 32"><path d="M10 6.500a3 3 0 016 0v12.200a5 5 0 11-6 0z"/><path d="M13 12v10"/><circle cx="13" cy="23" r="1.600"/><path d="M25 5v9M21 9.500h8M22.200 6.700l5.600 5.600M27.800 6.700l-5.600 5.600"/></symbol>
+<symbol id="pm-cog" viewBox="0 0 32 32"><circle cx="16" cy="16" r="12"/><circle cx="16" cy="16" r="7.200"/><circle cx="16" cy="16" r="2.800"/><path d="M16 4v3M16 25v3M4 16h3M25 16h3"/></symbol>
+</defs></svg>
+<div class="pm-in">
+ <div class="pm-hero">
+  <div class="pm-hero-img" role="img" aria-label="Precision coil springs"></div>
+  <div class="pm-tag" aria-hidden="true">From Wire<br>&nbsp;to Strength<i></i></div>
+  <div class="pm-eye"><i></i>Our Manufacturing</div>
+  <h2>Precision in every<b>step of production</b></h2>
+  <p class="pm-lead">From raw wire to high-performance springs, our advanced<br> manufacturing process ensures unmatched precision,<br> consistency and quality &mdash; every time.</p>
+  <a class="pm-btn" href="#contact">Explore Our Process &rarr;</a>
+  <div class="pm-feats">
+   <div><span class="ic"><svg class="pi"><use href="#pm-gear"/></svg></span><span>Modern<br>Machinery</span></div>
+   <div><span class="ic"><svg class="pi"><use href="#pm-shield"/></svg></span><span>Strict<br>Quality Control</span></div>
+   <div><span class="ic"><svg class="pi"><use href="#pm-target"/></svg></span><span>Skilled<br>Workforce</span></div>
+   <div><span class="ic"><svg class="pi"><use href="#pm-truck"/></svg></span><span>On-Time<br>Delivery</span></div>
+   <i class="pm-sep" style="left:calc(var(--u)*234)"></i><i class="pm-sep" style="left:calc(var(--u)*415)"></i><i class="pm-sep" style="left:calc(var(--u)*571)"></i>
   </div>
-  <a href="#" class="btn dark sm">Explore Our Manufacturing &rarr;</a>
  </div>
- <div class="r" role="img" aria-label="Production floor"></div>
+ <div class="pm-bgstrip"></div><div class="pm-bgstrip-l"></div>
+ <div class="pm-strip">
+  <div class="pm-lcard">
+   <div class="pm-lbg"><div class="pm-wire"></div><i class="pm-slash"></i></div>
+   <div class="pm-lcard-t"><small>OUR PROCESS</small><h3>Built with<b>Precision</b></h3><hr><p>Every spring goes through a well-defined process, ensuring high strength, durability and perfect dimensions.</p></div>
+  </div>
+  <div class="pm-steps">
+  <article class="pm-step s1"><div class="top"><span class="n">01</span><span class="si"><svg class="pi"><use href="#pm-coils"/></svg></span></div><h4>Raw Material</h4><p>High-grade spring steel wire is sourced and inspected for quality.</p><div class="ph2" style="background-image:url(images/mfg-raw.jpg)" role="img" aria-label="Raw Material"></div></article>
+  <span class="pm-arrow" style="left:calc(var(--u)*663)" aria-hidden="true">&rarr;</span>
+  <article class="pm-step s2"><div class="top"><span class="n">02</span><span class="si"><svg class="pi"><use href="#pm-wind"/></svg></span></div><h4>Coiling</h4><p>Precision CNC spring coiling machines form perfect shapes and pitch.</p><div class="ph2" style="background-image:url(images/mfg-coiling.jpg)" role="img" aria-label="Coiling"></div></article>
+  <span class="pm-arrow" style="left:calc(var(--u)*907)" aria-hidden="true">&rarr;</span>
+  <article class="pm-step s3"><div class="top"><span class="n">03</span><span class="si"><svg class="pi"><use href="#pm-therm"/></svg></span></div><h4>Heat Treatment</h4><p>Controlled heating and cooling for enhanced strength and durability.</p><div class="ph2" style="background-image:url(images/mfg-heat.jpg)" role="img" aria-label="Heat Treatment"></div></article>
+  <span class="pm-arrow" style="left:calc(var(--u)*1151)" aria-hidden="true">&rarr;</span>
+  <article class="pm-step s4"><div class="top"><span class="n">04</span><span class="si"><svg class="pi"><use href="#pm-cog"/></svg></span></div><h4>Grinding &amp; Finishing</h4><p>Fine grinding ensures accurate dimensions and smooth finish.</p><div class="ph2" style="background-image:url(images/mfg-grind.jpg)" role="img" aria-label="Grinding &amp; Finishing"></div></article>
+  <span class="pm-arrow" style="left:calc(var(--u)*1397)" aria-hidden="true">&rarr;</span>
+  <article class="pm-step s5"><div class="top"><span class="n">05</span><span class="si"><svg class="pi"><use href="#pm-shield"/></svg></span></div><h4>Final Inspection</h4><p>Each spring is tested for performance, load and quality standards.</p><div class="ph2" style="background-image:url(images/mfg-inspect.jpg)" role="img" aria-label="Final Inspection"></div></article>
+  </div>
+ </div>
+ <div class="pm-foot-bg"></div><div class="pm-foot-img"></div><i class="pm-foot-line"></i>
+ <div class="pm-foot">
+  <div class="pm-foot-in">
+   <div class="pm-fi"><span class="ic"><svg class="pi"><use href="#pm-factory"/></svg></span><div><b>High Precision</b><span>Tolerance up to &plusmn;0.05 mm</span></div></div>
+   <div class="pm-fi"><span class="ic"><svg class="pi"><use href="#pm-gear"/></svg></span><div><b>Advanced Machines</b><span>CNC Coiling | Heat Treatment | Grinding</span></div></div>
+   <div class="pm-fi"><span class="ic"><svg class="pi"><use href="#pm-shield"/></svg></span><div><b>Quality Assured</b><span>ISO 9001:2015 Certified</span></div></div>
+   <div class="pm-fi"><span class="ic"><svg class="pi"><use href="#pm-bolt"/></svg></span><div><b>Fast Turnaround</b><span>On-time delivery, every time</span></div></div>
+   <i class="pm-sep f" style="left:calc(var(--u)*296)"></i><i class="pm-sep f" style="left:calc(var(--u)*610)"></i><i class="pm-sep f" style="left:calc(var(--u)*847)"></i>
+  </div>
+  <p class="pm-eng">ENGINEERED<br>FOR A STRONGER<br>TOMORROW<i></i></p>
+ </div>
+</div>
 </section>
+<div class="pmo" id="pmScreen" role="dialog" aria-modal="true" aria-label="Our manufacturing process" aria-hidden="true">
+ <div class="pmo-sc">
+  <div class="pmo-top">
+   <div class="pmo-brand"><svg viewBox="0 0 48 48"><ellipse cx="24" cy="10" rx="14" ry="5" transform="rotate(-18 24 10)"/><ellipse cx="24" cy="19" rx="14" ry="5" transform="rotate(-18 24 19)"/><ellipse cx="24" cy="28" rx="14" ry="5" transform="rotate(-18 24 28)"/><ellipse cx="24" cy="37" rx="14" ry="5" transform="rotate(-18 24 37)"/></svg><div><b>Our Manufacturing</b><small>PRECISION SPRINGS &amp; COMPONENTS</small></div></div>
+   <button class="pmo-x" type="button" aria-label="Close and go back"><span>Close</span><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+  </div>
+  <div class="pmo-hero">
+   <div class="pmo-eye"><i></i>OUR MANUFACTURING</div>
+   <h3>Precision in every<b>step of production</b></h3>
+   <div class="pmo-hrow"><div class="pmo-himg"></div><div class="pmo-hline"></div>
+   <p>From raw wire to high-performance springs, our advanced manufacturing process ensures unmatched precision, consistency and quality &mdash; every time.</p>
+   <a class="pmo-btn" href="#contact" data-pm-close>Explore Our Process &rarr;</a></div>
+  </div>
+  <div class="pmo-feats">
+   <div><span class="ic"><svg class="pi"><use href="#pm-gear"/></svg></span><span>Modern<br>Machinery</span></div>
+   <div><span class="ic"><svg class="pi"><use href="#pm-shield"/></svg></span><span>Strict<br>Quality Control</span></div>
+   <div><span class="ic"><svg class="pi"><use href="#pm-target"/></svg></span><span>Skilled<br>Workforce</span></div>
+   <div><span class="ic"><svg class="pi"><use href="#pm-truck"/></svg></span><span>On-Time<br>Delivery</span></div>
+  </div>
+  <div class="pmo-panel">
+   <div class="pmo-built"><div><small>OUR PROCESS</small><h4>Built with<b>Precision</b></h4><hr><p>Every spring goes through a well-defined process, ensuring high strength, durability and perfect dimensions.</p></div><div class="pmo-wire" role="img" aria-label="Spring wire coil"></div></div>
+   <div class="pmo-row r3"><article class="pmo-c"><div class="t"><span class="n">01</span><span class="si"><svg class="pi"><use href="#pm-coils"/></svg></span></div><h5>Raw Material</h5><p>High-grade spring steel wire is sourced and inspected for quality.</p><div class="im" style="--im:url(images/mfg-raw.jpg)" role="img" aria-label="Raw Material"></div></article><article class="pmo-c"><div class="t"><span class="n">02</span><span class="si"><svg class="pi"><use href="#pm-wind"/></svg></span></div><h5>Coiling</h5><p>Precision CNC spring coiling machines form perfect shapes and pitch.</p><div class="im" style="--im:url(images/mfg-coiling.jpg)" role="img" aria-label="Coiling"></div></article><article class="pmo-c"><div class="t"><span class="n">03</span><span class="si"><svg class="pi"><use href="#pm-therm"/></svg></span></div><h5>Heat Treatment</h5><p>Controlled heating and cooling for enhanced strength and durability.</p><div class="im" style="--im:url(images/mfg-heat.jpg)" role="img" aria-label="Heat Treatment"></div></article></div>
+   <div class="pmo-row r2"><article class="pmo-c"><div class="t"><span class="n">04</span><span class="si"><svg class="pi"><use href="#pm-cog"/></svg></span></div><h5>Grinding &amp; Finishing</h5><p>Fine grinding ensures accurate dimensions and smooth finish.</p><div class="im" style="--im:url(images/mfg-grind.jpg)" role="img" aria-label="Grinding &amp; Finishing"></div></article><article class="pmo-c"><div class="t"><span class="n">05</span><span class="si"><svg class="pi"><use href="#pm-shield"/></svg></span></div><h5>Final Inspection</h5><p>Each spring is tested for performance, load and quality standards.</p><div class="im" style="--im:url(images/mfg-inspect.jpg)" role="img" aria-label="Final Inspection"></div></article></div>
+   <div class="pmo-foot">
+    <div class="pmo-fimg"></div>
+    <div class="pmo-fgrid">
+     <div><span class="ic"><svg class="pi"><use href="#pm-factory"/></svg></span><span><b>High Precision</b><span>Tolerance up to &plusmn;0.05 mm</span></span></div>
+     <div><span class="ic"><svg class="pi"><use href="#pm-gear"/></svg></span><span><b>Advanced Machines</b><span>CNC Coiling | Heat Treatment | Grinding</span></span></div>
+     <div><span class="ic"><svg class="pi"><use href="#pm-shield"/></svg></span><span><b>Quality Assured</b><span>ISO 9001:2015 Certified</span></span></div>
+     <div><span class="ic"><svg class="pi"><use href="#pm-bolt"/></svg></span><span><b>Fast Turnaround</b><span>On-time delivery, every time</span></span></div>
+    </div>
+    <div class="pmo-wire-t">From Wire<br>&nbsp;to Strength<i></i></div>
+   </div>
+  </div>
+  <div class="pmo-backrow"><button class="pmo-back" type="button"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>Back to website</button></div>
+  <div class="pmo-bottom"></div>
+ </div>
+</div>
+<script>
+(function(){
+ var scr=document.getElementById('pmScreen'),mq=window.matchMedia('(max-width:1099px)'),last=null,open=false;
+ if(!scr)return;
+ function show(){open=true;last=document.activeElement;scr.classList.add('on');scr.setAttribute('aria-hidden','false');document.body.classList.add('pm-lock');scr.scrollTop=0;var x=scr.querySelector('.pmo-x');if(x)x.focus({preventScroll:true});}
+ function hide(){open=false;scr.classList.remove('on');scr.setAttribute('aria-hidden','true');document.body.classList.remove('pm-lock');if(last&&last.focus)last.focus({preventScroll:true});}
+ document.querySelectorAll('#manufacturing .pm-btn').forEach(function(b){b.addEventListener('click',function(e){if(!mq.matches)return;e.preventDefault();history.pushState({pm:1},'');show();});});
+ scr.querySelector('.pmo-x').addEventListener('click',function(){if(history.state&&history.state.pm)history.back();else hide();});
+ var bk=scr.querySelector('.pmo-back');if(bk)bk.addEventListener('click',function(){if(history.state&&history.state.pm)history.back();else hide();});
+ scr.querySelectorAll('[data-pm-close]').forEach(function(a){a.addEventListener('click',function(){hide();});});
+ window.addEventListener('popstate',function(){if(open)hide();});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape'&&open){if(history.state&&history.state.pm)history.back();else hide();}});
+ mq.addEventListener&&mq.addEventListener('change',function(){if(!mq.matches&&open)hide();});
+})();
+</script>
+
 
 <section class="qual" id="quality"><div class="wrap">
  <div><div class="eyebrow">Quality &amp; certifications</div><h2>BUILT ON TRUST,<br>ENGINEERED TO LAST</h2>
@@ -1068,14 +1385,57 @@ nv.addEventListener('click',function(e){if(e.target.tagName==='A'){nv.classList.
     k.setAttribute('tabindex','-1');
     track.appendChild(k);
   });
-  var SPEED=34; // px per second - gentle, premium pace
-  function setSpeed(){
-    var half=track.scrollWidth/2;
-    if(half>0) track.style.animationDuration=(half/SPEED).toFixed(1)+'s';
+  var SPEED=34, half=0, pos=0, lastSet=0, paused=false, timer=null, prev=0, dragging=false, moved=false, sx=0, ss=0;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function measure(){half=track.scrollWidth/2;}
+  function hold(ms){paused=true;clearTimeout(timer);if(ms>0)timer=setTimeout(function(){pos=vp.scrollLeft;paused=false;},ms);}
+  measure();
+  window.addEventListener('load',measure);
+  window.addEventListener('resize',measure,{passive:true});
+  // user touches / wheels / keys -> pause briefly, then resume automatically (never stays stuck)
+  ['touchstart','wheel','keydown'].forEach(function(ev){vp.addEventListener(ev,function(){hold(2200);},{passive:true});});
+  vp.addEventListener('touchend',function(){hold(1800);},{passive:true});
+  vp.addEventListener('touchcancel',function(){hold(1800);},{passive:true});
+  var canHover=window.matchMedia&&window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+  vp.addEventListener('pointerenter',function(e){if(canHover&&e.pointerType==='mouse')hold(0);});
+  vp.addEventListener('pointerleave',function(e){if(canHover&&e.pointerType==='mouse'&&!dragging)hold(700);});
+  document.addEventListener('visibilitychange',function(){prev=0;});
+  // any real scroll (swipe momentum, trackpad, drag) keeps it paused until it settles; also loops endlessly in both directions
+  vp.addEventListener('scroll',function(){
+    if(Math.abs(vp.scrollLeft-lastSet)<1.5&&!paused)return;
+    if(!half)measure();
+    if(half){
+      if(vp.scrollLeft>half+2){vp.scrollLeft-=half;}
+      else if(vp.scrollLeft<1){vp.scrollLeft+=half;}
+    }
+    pos=vp.scrollLeft;
+    if(!dragging)hold(1800);
+  },{passive:true});
+  // mouse drag-to-scroll (desktop)
+  vp.addEventListener('pointerdown',function(e){
+    if(e.pointerType!=='mouse'||e.button!==0)return;
+    dragging=true;moved=false;sx=e.clientX;ss=vp.scrollLeft;hold(0);vp.classList.add('drag');
+  });
+  window.addEventListener('pointermove',function(e){
+    if(!dragging)return;
+    var dx=e.clientX-sx;if(Math.abs(dx)>4)moved=true;
+    vp.scrollLeft=ss-dx;
+  });
+  function endDrag(){if(!dragging)return;dragging=false;vp.classList.remove('drag');hold(1500);}
+  window.addEventListener('pointerup',endDrag);window.addEventListener('pointercancel',endDrag);
+  vp.addEventListener('click',function(e){if(moved){e.preventDefault();e.stopPropagation();moved=false;}},true);
+  vp.addEventListener('dragstart',function(e){e.preventDefault();});
+  // gentle auto-scroll (keeps going after any tap/click)
+  function tick(t){
+    var dt=prev?Math.min(64,t-prev):0;prev=t;
+    if(!reduce&&!paused&&!document.hidden&&half>0){
+      pos+=SPEED*dt/1000;
+      if(pos>=half)pos-=half;
+      vp.scrollLeft=pos;lastSet=vp.scrollLeft;
+    }
+    requestAnimationFrame(tick);
   }
-  setSpeed();
-  window.addEventListener('load',setSpeed);
-  window.addEventListener('resize',setSpeed,{passive:true});
+  requestAnimationFrame(tick);
 })();
 </script>
 </body>
